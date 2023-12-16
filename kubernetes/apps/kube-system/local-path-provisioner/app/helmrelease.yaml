@@ -28,7 +28,7 @@ spec:
       repository: docker.io/rancher/local-path-provisioner
       tag: v0.0.26
     helperImage:
-      repository: public.ecr.aws/docker/library/busybox
+      repository: docker.io/library/busybox
       tag: latest
     storageClass:
       defaultClass: false
