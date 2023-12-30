@@ -17,6 +17,8 @@ jobs:
         path: ["kubernetes"]
         resource: ["helmrelease", "kustomization"]
     steps:
+      - name: Setup Flux CLI
+        uses: fluxcd/flux2/action@v2
       - name: Diff Resources
         uses: allenporter/flux-local/action/diff@8a71acacb98e7332b3151f7e33325915f03b8463 # 4.2.0
         id: diff
